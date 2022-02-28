@@ -1,10 +1,10 @@
-package sample;
 
-public class helloworld {
+public class NoTimeRotated {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println("hello");
+		int[]  arr= {3,9,-1,-100};
+		
 
 	}
 

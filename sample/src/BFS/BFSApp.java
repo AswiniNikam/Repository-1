@@ -1,8 +1,11 @@
+package BFS;
 
 
-package graph;
+import java.util.LinkedList;
+import java.util.Queue;
 
-import java.util.Stack;
+import BFS.Graph;
+import BFS.Vertex;
 
 class Vertex {
   public char label;
@@ -20,13 +23,13 @@ class Graph {
   private Vertex vertexList[];
   private int adjMat[][];
   private int nVerts;
-  private Stack<Integer> s;
+  private Queue<Integer> q;
   
   public Graph() {
     vertexList = new Vertex[MAX_VERTS];
     adjMat = new int[MAX_VERTS][MAX_VERTS];
     nVerts = 0;
-    s = new Stack<Integer>();
+    q = new LinkedList<Integer>();
   }
   
   public void addVertex(char lab) {
@@ -39,38 +42,36 @@ class Graph {
   }
   
   public void displayVertex(int v) {
-    System.out.print(vertexList[v].label + " ");
+    System.out.print(vertexList[v].label);
   }
   
   public int getAdjUnvisitedVertex (int v) {
-    for(int j = 0; j < nVerts; j++) {
-      if(adjMat[v][j] == 1 && vertexList[j].wasVisited == false) {
+    for(int j=0; j<nVerts; j++) {
+      if(adjMat[v][j]==1 && vertexList[j].wasVisited==false) {
         return j;
       }
     }
     return -1;
   }
   
-  public void dfs() {
+  public void bfs() {
     vertexList[0].wasVisited = true;
     displayVertex(0);
-    s.push(0);
+    q.add(0);
+    int v2;
     
-    while(!s.isEmpty()) {    
-      int v = getAdjUnvisitedVertex(s.peek());
-      
-      if(v == -1) {
-        s.pop();
-      } else {
-        vertexList[v].wasVisited = true;
-        displayVertex(v);
-        s.push(v);
+    while(!q.isEmpty()) {    
+      int v1 = q.remove();
+      while((v2=getAdjUnvisitedVertex(v1))!=-1) {  
+        vertexList[v2].wasVisited = true;
+        displayVertex(v2);
+        q.add(v2);  
       }
     }
   }
 }
 
-public class DFSApp {
+public class BFSApp {
 
   public static void main(String[] args) {
   
@@ -89,8 +90,8 @@ public class DFSApp {
     theGraph.addEdge(4, 5);
     theGraph.addEdge(1, 3);
     
-    System.out.println("Visits: ");
-    theGraph.dfs();
+    System.out.println("DFS Visits: ");
+    theGraph.bfs();
     System.out.println();
   }
 
