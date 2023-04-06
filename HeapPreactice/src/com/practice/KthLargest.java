@@ -33,7 +33,7 @@ public class KthLargest {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[] arr= {10,7,10,6,10,7,5};
+		int[] arr= {10,7,10,6,10,7,5,8};
 		KthLargest.frequencySort(arr);
 		
 		
