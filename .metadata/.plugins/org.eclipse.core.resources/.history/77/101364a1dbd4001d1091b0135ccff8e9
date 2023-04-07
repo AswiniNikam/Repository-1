@@ -1,0 +1,43 @@
+package com.points;
+
+import java.util.Collections;
+import java.util.List;
+
+class Coordinate{
+	int x; int y;
+	public Cordinate(int x, int y) {
+		this.x=x;
+		this.y=y;
+	}
+	public double getDistance(int x, int y) {
+		double distance= (x*x)+(y*y);
+	}
+	public List<Coordinate> getClosestPoints(List<Coordinate> list){
+		Collections.sort(list,(n1,n2)->{
+			if(getDistance(n1.x, n1.y)!= getDistance(n2.x, n2.y)) {
+				return getDistance(n1.x, n1.y)-getDistance(n2.x, n2.y);
+			}
+			return getDistance(n1.x, n1.y).compareTo(getDistance(n2.x, n2.y));
+		});
+		return list;
+	}
+}
+public class KNearestPoints {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		  Coordinate c1 = new Coordinate(2, 3);
+		    Coordinate c2 = new Coordinate(1, 4);
+		    Coordinate c3 = new Coordinate(3, 5);
+		    Coordinate c4 = new Coordinate(0, 4);
+		    List<Coordinate> list=new ArrayList<>();
+		    list.add(c1);
+		    list.add(c2);
+		    list.add(c3);
+		    list.add(c4);
+		    List<Integer> ans=getClosestPoints(list)l
+		    
+
+	}
+
+}

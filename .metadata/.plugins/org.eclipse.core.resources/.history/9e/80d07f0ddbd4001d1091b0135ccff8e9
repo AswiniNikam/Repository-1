@@ -1,0 +1,25 @@
+package com.points;
+
+class Coordinate{
+	int x; int y;
+	public Cordinate(int x, int y) {
+		this.x=x;
+		this.y=y;
+	}
+	public double getDistance(int x, int y) {
+		double distance= (x*x)+(y*y);
+	}
+}
+public class KNearestPoints {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		  Coordinate c1 = new Coordinate(2, 3);
+		    Coordinate c2 = new Coordinate(1, 4);
+		    Coordinate c3 = new Coordinate(3, 5);
+		    Coordinate c4 = new Coordinate(0, 4);
+		    
+
+	}
+
+}
