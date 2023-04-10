@@ -1,0 +1,11 @@
+package com.src;
+
+public class MinLengthToBeSorted {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 int arr[] = { 1, 2, 5, 3, 0, 22, 13, 8, 15, 18 };
+		 
+	}
+
+}

@@ -1,0 +1,19 @@
+package com.practice.string;
+
+public class ReverseVowels {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s="equation";
+		
+				
+
+	}
+	public static boolean isVowel(char ch) {
+		if(ch=='a' || ch=='e' || ch=='i'|| ch=='o' || ch=='u') {
+			return true;
+		}
+		return false;
+	}
+
+}

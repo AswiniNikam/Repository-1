@@ -1,0 +1,24 @@
+package com.src;
+import java.util.*;
+
+public class FindSubArrays {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] arr= {4,2,5,3,6};
+		int num=45;
+		int start=0, end=0,mul=1;
+		List<List<Integer>> ans=new ArrayList<>();
+		while(end<arr.length) {
+			mul=mul*arr[end];
+			List<Integer> l1=new ArrayList<>();
+			while(mul>num) {
+				for(int i=end;i>=start;i--) {
+					
+				}
+			}
+			end++;
+		}
+	}
+
+}

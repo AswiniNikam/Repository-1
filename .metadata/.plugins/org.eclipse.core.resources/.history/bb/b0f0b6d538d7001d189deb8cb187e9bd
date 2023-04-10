@@ -1,0 +1,14 @@
+package com.src;
+import java.u
+
+public class LongestArrayIfZeroReplaced {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] arr= {0,1,0,1,0,1,1,1,0};
+		int end=0, start=0;
+		Map<Integer, Integer> map=new HashMap<>();
+
+	}
+
+}

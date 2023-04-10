@@ -1,0 +1,4 @@
+INDEX VERSION 1.132+/Users/ashu/coding_practice/.metadata/.plugins/org.eclipse.jdt.core
+1865797976.index
+2107016339.index
+1492766893.index

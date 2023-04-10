@@ -1,0 +1,21 @@
+package com.practice.string;
+import java.util.*;
+
+public class LongestSubstringIfKCharcatersReplaced {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s="bccbababd";
+			int k=2, maxF=Integer.MIN_VALUE;
+			Map<Character,Integer> map=new HashMap<>();
+			int end=0, start=0;
+			while(end<s.length()) {
+				char ch=s.charAt(end);
+				map.put(ch, map.getOrDefault(ch, 0)+1);
+				
+				end++;
+			}
+			
+	}
+
+}

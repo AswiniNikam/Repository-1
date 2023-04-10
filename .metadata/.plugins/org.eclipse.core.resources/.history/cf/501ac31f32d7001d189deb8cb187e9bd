@@ -1,0 +1,10 @@
+package com.src;
+
+public class ClosestSumToTarget {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] arr= {2,-3,4,-2};
+	}
+
+}
