@@ -1,0 +1,11 @@
+package com.practice.string;
+
+public class LongestSubstringIfKCharcatersReplaced {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s="bccbababd"
+
+	}
+
+}

@@ -1,0 +1,13 @@
+package com.practice.string;
+
+public class FrequentWord {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s="Best item in category. Lenovo Samsing Lenovo? item";
+		s=s.replaceAll("[^a-zA-Z]", "")
+		System.out.println(s);
+		
+	}
+
+}

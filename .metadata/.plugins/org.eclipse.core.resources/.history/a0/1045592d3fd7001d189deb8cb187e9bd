@@ -1,0 +1,18 @@
+package com.practice.string;
+import java.util.*;
+public class LongestSubStrinngWIthKDistinct {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String a="bccbcbccd";
+		int k=2;
+		Map<Character, Integer> map=new HashMap<>();
+		int end=0, start=0;
+		while(end<a.length()) {
+			map.put(a.charAt(end), map.getOrDefault(a.charAt(end), 0)+1);
+			end++;
+		}
+
+	}
+
+}

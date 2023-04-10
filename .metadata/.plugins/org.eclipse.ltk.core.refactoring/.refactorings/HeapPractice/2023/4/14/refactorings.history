@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;com.practice.KnearestPoints.java&apos; to &apos;HeapApp.java&apos;&#x0A;- Original project: &apos;HeapPractice&apos;&#x0A;- Original element: &apos;com.practice.KnearestPoints.java&apos;&#x0A;- Renamed element: &apos;com.practice.HeapApp.java&apos;" description="Rename compilation unit &apos;KnearestPoints.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;com.practice{KnearestPoints.java" name="HeapApp.java" references="false" stamp="1680830306307" version="1.0"/>
+</session>

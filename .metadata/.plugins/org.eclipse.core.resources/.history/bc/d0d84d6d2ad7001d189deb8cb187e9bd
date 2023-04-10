@@ -1,0 +1,13 @@
+package com.src;
+import java.util.*;
+public class GetMaximumOfSizeK {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] arr= {3,2,5,4,1};
+		int k=3;
+		Dequeue<Integer> q1=new LinkedList<>();
+
+	}
+
+}

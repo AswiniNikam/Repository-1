@@ -1,0 +1,15 @@
+package com.practice.string;
+import java.util.*;
+
+public class getAnagramIndex {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s="bcdcbaba";
+		String p="abc";
+		Map<Character,Integer> map=new HashMap<>();
+		
+
+	}
+
+}

@@ -1,0 +1,14 @@
+package com.practice.string;
+import java.util.*;
+
+public class LongestSubstringIfKCharcatersReplaced {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s="bccbababd";
+			int k=2;
+			Map<Character,Integer> map=new HashMap<>();
+			
+	}
+
+}
