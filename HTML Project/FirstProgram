@@ -1,0 +1,58 @@
+<html>
+<head> 
+<style>
+body{
+background-color: lightgreen;
+}
+h2{
+background-color: green;
+color: white
+}
+
+</style>
+<title>Online Job Application </title>
+</head>
+<body> 
+<form>
+<div id="personal-information">
+<h2 align="center">Personal Information </h1>
+<table>
+<tr>
+<td> First Name </td>
+<td> <input type="text"> </td>
+<td> Middle Name </td>
+<td> <input type="text"> </td>
+<td> Last Name </td>
+<td> <input type="text"> </td>
+</tr>
+<tr>
+<td> Fathers Name </td>
+<td> <input type="text"> </td>
+<td> Mothers Name </td>
+<td> <input type="text"> </td>
+</tr>
+<tr>
+<td> Current Adrress</td>
+<td> <textarea rows="5" cols="25"></textarea></td>
+<td> Permanant Adrress</td>
+<td> <textarea rows="5" cols="25"></textarea></td>
+</tr>
+<tr>
+<td>Phone Numbers</td>
+</tr>
+<tr>
+<td> Home Phone</td>
+<td> <input type="text"></td>
+<td> Mobile Number</td>
+<td> <input type="text"></td>
+</tr>
+<tr>
+<td> Date of birth </td>
+<td> <input type="date"> </td>
+</tr>
+</table>
+</div>
+</form>
+
+</body>
+</html>
