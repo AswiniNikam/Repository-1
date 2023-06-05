@@ -1,0 +1,33 @@
+<html>
+<title> Addition of two numbers </title>
+<style>
+p{
+background-color:green;
+color:white;
+}
+</style>
+<head> <b>Addition</b> 
+<script type="text/javascript">
+function addition(){
+	var num1=document.getElementById("t2").value;
+	document.getElementById("l2").innerHTML=num1.toUpperCase();
+	
+}
+</script>
+</head>
+<body>
+<img src="glass.jpg", width="200", height="200"/>
+
+<br>
+<P> Calculator</P>
+</br>
+<lable>Enter Number 1</lable>
+<input type="text", id="t1">
+<lable> Enter Number 2</lable>
+<input type="text", id="t2", onblur="addition()">
+<button onclick="addition()", id="b1"> Addition </button>
+
+<lable id="l1">Result is </lable>
+<lable id="l2"> </lable>
+</body>
+</html>
